@@ -173,17 +173,17 @@ def main():
 
     backup_parser.add_argument(
         '--cassandra-conf-path',
-        default='/etc/cassandra/conf/',
+        default='/usr/local/cassandra/conf/',
         help="cassandra config file path")
 
     backup_parser.add_argument(
         '--nodetool-path',
-        default=None,
+        default='/usr/local/cassandra/bin/nodetool',
         help="nodetool path")
 
     backup_parser.add_argument(
         '--cassandra-bin-dir',
-        default='/usr/bin',
+        default='/usr/local/cassandra/bin/',
         help="cassandra binaries directory")
 
     backup_parser.add_argument(
